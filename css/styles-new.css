@@ -362,8 +362,6 @@ h2 {
   transition: opacity 500ms linear, visibility 500ms linear;
 }
 
-
-
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -379,7 +377,6 @@ h2 {
   height: 580px;
   background-color: #ffffff;
   padding: 40px;
-
 }
 
 .close-btn {
@@ -411,14 +408,11 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
 }
 
 .modal-form .modal-form-btn {
   align-items: center;
 }
-
-
 
 .modal-form-head {
   font-family: Roboto;
@@ -432,16 +426,14 @@ h2 {
   margin-bottom: 12px;
 }
 
-
 .modal-form-field {
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: var(--content-color);
-
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--content-color);
 }
 
 .modal-form-field + .modal-form-field {
@@ -452,7 +444,6 @@ color: var(--content-color);
   display: block;
   position: relative;
   margin-top: 4px;
-
 }
 
 .modal-form-input {
@@ -465,10 +456,8 @@ color: var(--content-color);
 
 .modal-form-input:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: var(--button-color);
 }
-
-
 
 .modal-input-icons {
   position: absolute;
@@ -478,11 +467,12 @@ color: var(--content-color);
   width: 18px;
   height: 18px;
   transition: background-color 250ms linear;
-  fill: var(--h-color);
 }
 
-.modal-form-input:focus + .modal-form-icon {
-  background-color: var(--accent-color);
+.modal-form-input:focus + .modal-input-icons {
+  outline: none;
+  border-color: var(--button-color);
+  fill: var(--button-color);
 }
 
 .modal-form-message {
@@ -512,8 +502,6 @@ color: var(--content-color);
   cursor: pointer;
   border: 1px solid #303030;
 }
-
-
 
 /*  =========END MODAL PART==============  */
 
@@ -1033,14 +1021,14 @@ color: var(--content-color);
 
 .modal-start-p {
   font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: #212121;
+  color: #212121;
 }
 
 .modal-input-name {
@@ -1053,14 +1041,14 @@ color: #212121;
   opacity: 0;
 }
 
-.custom-checkbox+label {
+.custom-checkbox + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.custom-checkbox+label::before {
-  content: '';
+.custom-checkbox + label::before {
+  content: "";
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -1074,67 +1062,68 @@ color: #212121;
   background-size: 50% 50%;
 }
 
-.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #b3d7ff;
 }
 
-.custom-checkbox:not(:disabled):active+label::before {
+.custom-checkbox:not(:disabled):active + label::before {
   background-color: #b3d7ff;
   border-color: #b3d7ff;
 }
 
-.custom-checkbox:focus+label::before {
+.custom-checkbox:focus + label::before {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.custom-checkbox:focus:not(:checked)+label::before {
+.custom-checkbox:focus:not(:checked) + label::before {
   border-color: #80bdff;
 }
 
-.custom-checkbox:checked+label::before {
+.custom-checkbox:checked + label::before {
   border-color: #0b76ef;
   background-color: #0b76ef;
   background-image: url(./img/symbol-defs#icon-checkmark);
 }
 
-.custom-checkbox:disabled+label::before {
+.custom-checkbox:disabled + label::before {
   background-color: #e9ecef;
 }
 
 .modal-form-checkboxarea {
   margin-bottom: 30px;
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 171%;
-/* identical to box height, or 171% */
-
-letter-spacing: 0.03em;
-
-color: var(--content-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  /* identical to box height, or 171% */
+  width: 100%;
+  letter-spacing: 0.03em;
+  color: var(--content-color);
 }
 
 .modal-form-btn {
   padding: 10px 56px 10px 56px;
   font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 187%;
-/* identical to box height, or 187% */
-background-color: var(--button-color);
-letter-spacing: 0.06em;
-width: 200px;
-height: 50px;
-border-radius: 4px;
-border: 0px;
-color: var(--white-color);
-
-
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 187%;
+  /* identical to box height, or 187% */
+  background-color: var(--button-color);
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+  color: var(--white-color);
 }
 
 .modal-btn-kostil {
   display: flex;
   justify-content: center;
+}
+
+.footer-form-input-div {
+  display: flex;
 }
