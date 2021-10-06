@@ -1178,6 +1178,16 @@ color: var(--white-color);
     align-items: baseline;
   }
 
-  .left {
+  .footer-two-sides:first-child {
     flex-direction: row;
+  }
+
+  .close-button {
+    fill: var(--black-color);
+    width: 11px;
+    height: 11px;
+  }
+
+  .close-btn:focus .close-button {
+    fill: var(--hover-color);
   }
