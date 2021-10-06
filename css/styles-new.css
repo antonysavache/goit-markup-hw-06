@@ -667,7 +667,6 @@ flex-wrap: wrap;
 
 .footer-con {
   display: flex;
-  background-color: var(--bg-color);
   justify-content: space-between;
   align-items: baseline;
 }
